@@ -82,3 +82,6 @@ A key part of this to understand is that "rendering" is not the same thing as "u
 - In Concurrent Rendering, React might end up rendering a component multiple times, but throw away the render output each time if other updated invalidate the current work being done
 
 https://julesblom.com/writing/react-hook-component-timeline
+https://wavez.github.io/react-hooks-lifecycle/
+
+- Note... if a component returns child components, the effects are called from the children upwards to the parent.
