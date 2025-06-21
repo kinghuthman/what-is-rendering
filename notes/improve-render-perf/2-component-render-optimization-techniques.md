@@ -20,7 +20,7 @@ There's also a lesser-known technique as well: if a React component returns the 
 
 Examples:
 
-!(Ways to prevent rerenders)[https://github.com/user-attachments/assets/8f129a62-9fbe-4d61-8f6e-977aac4c015c]
+![Ways to prevent rerenders](https://github.com/user-attachments/assets/8f129a62-9fbe-4d61-8f6e-977aac4c015c)
 
 Conceptually, we could say that the difference between these two approaches is:
 

@@ -2,7 +2,7 @@
 
 We've already seen that by default, React re-renders all nested components even if their props haven't changed. That also means that passing new references as props to a child component doesn't matter, because it will render whether or not you pass the same props. So, something like this is totally fine:
 
-!(props affect render optimization)[https://github.com/user-attachments/assets/96c0e3f7-1fd1-460d-a345-a5bb68e6f28c]
+![props affect render optimization](https://github.com/user-attachments/assets/96c0e3f7-1fd1-460d-a345-a5bb68e6f28c)
 
 Every time `ParentComponent` renders, it will create a new `onClick` function reference and a new `data` object reference, then pass them as props to `NormalChildComponent`. (Note that it doesn't matter whether we're defining `onClick` using the `function` keyword or as an arrow function - it
 s a new function reference either way.)
