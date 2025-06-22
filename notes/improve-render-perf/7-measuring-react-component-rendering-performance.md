@@ -1,0 +1,5 @@
+## Measuring React Component Rendering Performance
+
+Use the React DevTools Profiler to see what components are rendering in each commit. Find components that are rendering unexpectedly, use the DevTools to figure out why they rendered, and fix things (perhaps by wrapping them in React.memo(), or having the parent component memoize the props it's passing down.)
+
+Also, remember that React runs way slower in dev builds. You can profile your app in development mode to see which components are rendering and why, and do some comparisons of relative time needed to render components in comparison to each other ("Component B took 3 times as long to render in this commit than component A" did). But, never measure absolute render times using a React development build - only measure absolute times using production builds! (or else Dan Abramov will have to come yell at you for using numbers that aren't accurate). Note that you'll need to use [a special "profiling" build of React](https://kentcdodds.com/blog/profile-a-react-app-for-performance) if you want to actually use the profiler to capture timing data from a prod-like build.
